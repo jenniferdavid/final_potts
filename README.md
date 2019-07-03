@@ -1,12 +1,16 @@
+Final-potts
+============
+You need [Eigen][] v3.
+
 After cloning the repository, open a terminal
 
-mkdir OUTPUTS //create a folder for storing outputs
+    git clone https://github.com/jenniferdavid/final-potts.git final-potts
+    mkdir final-potts/OUTPUTS
+    gedit final_potts.cpp
+    g++ -pg -o final_potts -std=c++11 final_potts.cpp -I /usr/local/include/eigen3 -lboost_iostreams -lboost_system -lboost_filesystem
+    ./final_potts M N kT_start kT_end kT_fac gamma -read -exact -default -random eta Tkappa -max
 
-gedit final_potts.cpp //open the cpp file and change the input and output paths (line nos 104 and 105)
-
-g++ -pg -o final_potts -std=c++11 final_potts.cpp -I /usr/local/include/eigen3 -lboost_iostreams -lboost_system -lboost_filesystem 
-
-./final_potts M N kT_start kT_end kT_fac gamma -read -exact -default -random eta Tkappa -max 
+open the cpp file to change the input and output paths (line nos 104 and 105)
 
 M -> no of vehicles
 
@@ -33,3 +37,6 @@ eta -> Normalisation function weighing factor
 Tkappa -> Cost function weighing factor
 
 -max or -sum -> Using sum or max function
+
+[Eigen]: http://eigen.tuxfamily.org/
+
