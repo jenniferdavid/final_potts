@@ -3,6 +3,7 @@ g++ -pg -o final_potts -std=c++11 final_potts.cpp -I /usr/local/include/eigen3 -
 ./final_potts M N kT_start kT_end kT_fac gamma -read -exact -default -random eta Tkappa -max
 
 M -> no of vehicles
+
 N -> no of tasks
 kT_start -> start temperature
 kT_end -> end temperature
