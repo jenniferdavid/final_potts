@@ -4,9 +4,9 @@ mkdir OUTPUTS //create a folder for storing outputs
 
 gedit final_potts.cpp //open the cpp file and change the input and output paths (line nos 104 and 105)
 
-g++ -pg -o final_potts -std=c++11 final_potts.cpp -I /usr/local/include/eigen3 -lboost_iostreams -lboost_system -lboost_filesystem //compile
+g++ -pg -o final_potts -std=c++11 final_potts.cpp -I /usr/local/include/eigen3 -lboost_iostreams -lboost_system -lboost_filesystem 
 
-./final_potts M N kT_start kT_end kT_fac gamma -read -exact -default -random eta Tkappa -max  //run with the given inputs
+./final_potts M N kT_start kT_end kT_fac gamma -read -exact -default -random eta Tkappa -max 
 
 M -> no of vehicles
 
