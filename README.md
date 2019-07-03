@@ -10,7 +10,7 @@ After cloning the repository, open a terminal
     g++ -pg -o final_potts -std=c++11 final_potts.cpp -I /usr/local/include/eigen3 -lboost_iostreams -lboost_system -lboost_filesystem
     ./final_potts M N kT_start kT_end kT_fac gamma -read -exact -default -random eta Tkappa -max
 
-open the cpp file to change the input and output paths (line nos 104 and 105)
+open the final_potts.cpp file to change the input and output paths (line nos 104 and 105)
 
 M -> no of vehicles
 
